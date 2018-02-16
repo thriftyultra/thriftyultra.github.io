@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Feb 03 2018 17:55:46 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri Feb 16 2018 19:28:49 GMT+0000 (UTC)  -->
 <html data-wf-page="5a6df1ef92eb9700011aca55" data-wf-site="5a6df1ef92eb9700011aca54">
 <head>
   <meta charset="utf-8">
@@ -412,9 +412,6 @@
         </div>
       </div>
     </div>
-    <div class="additional-icon"><img src="images/snowy.svg" class="weather-image">
-      <div class="additional-icon-name">Snowy</div>
-    </div>
   </div>
   <div class="container w-container">
     <h3 class="h3">Tasks</h3>
@@ -456,7 +453,7 @@
     <h3 class="h3">Calendar</h3>
     <div class="email">
       <div class="card-header">
-        <div class="card-name">Email</div><a href="#" class="edit-button">Edit</a></div>
+        <div class="card-name">Calendar</div><a href="#" class="edit-button">Edit</a></div>
       <div class="card-body-calendar">
         <div class="calendar-event">
           <div class="calendar-event-chronology">NOW</div>
@@ -493,6 +490,110 @@
         <div data-w-id="1d1d5aea-abf0-83a6-e8c3-ac583a832c26" class="loading-animation-logo-right"></div>
       </div>
       <div class="loading-text">Loading your brief...</div>
+    </div>
+  </div>
+  <div class="container w-container">
+    <h2 class="heading-2">&quot;edit state&quot;</h2>
+    <p class="paragraph">Here are the the elements in the state when the edit button is pressed.</p>
+  </div>
+  <div class="container w-container">
+    <h3 class="h3">Twitter</h3>
+    <div class="twitter">
+      <div class="card-header">
+        <div class="card-name">Twitter</div><a href="#" class="edit-button">Cancel</a></div>
+      <div class="card-body-edit">
+        <div class="edit-elements-wrapper">
+          <div class="edit-state-steps">Step 1: Authorize</div><a href="#" class="twitter-login-button w-inline-block"><img src="images/twitter-button.svg" height="20" class="twitter-button-image"><div class="button-text">log in</div></a></div>
+        <div class="edit-elements-wrapper">
+          <div class="edit-state-steps">Step 2: Select a list</div>
+          <div data-delay="0" class="list-dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="dropdown-text">Timeline</div><img src="images/dropdown-icon.svg" height="10" class="dropdown-icon"></div>
+            <nav class="dropdown-list w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">None (Timeline)</a><a href="#" class="w-dropdown-link">Open Source</a><a href="#" class="w-dropdown-link">News</a></nav>
+          </div>
+          <div data-delay="0" class="list-dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="dropdown-text">None</div><img src="images/dropdown-icon.svg" height="10" class="dropdown-icon"></div>
+            <nav class="dropdown-list w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">None (Timeline)</a><a href="#" class="w-dropdown-link">Open Source</a><a href="#" class="w-dropdown-link">News</a></nav>
+          </div>
+        </div>
+        <div class="buttons-wrapper"><a href="#" class="ok-button w-button">OK</a><a href="#" class="delete-button w-button">Delete</a></div>
+      </div>
+      <div class="resize"><img src="images/resize.svg" height="15" class="resize-image"></div>
+    </div>
+  </div>
+  <div class="container w-container">
+    <h3 class="h3">News (RSS)</h3>
+    <div class="rss">
+      <div class="card-header">
+        <div class="card-name">News</div><a href="#" class="edit-button">Edit</a></div>
+      <div class="card-body-edit">
+        <div class="buttons-wrapper"><a href="#" class="ok-button w-button">OK</a><a href="#" class="delete-button w-button">Delete</a></div>
+        <div class="edit-elements-wrapper">
+          <div class="edit-state-steps">RSS Feeds</div>
+          <div class="w-form">
+            <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="rss-feed-text-area w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Name" id="field-2" required=""><textarea id="field" name="field" placeholder="Feeds (one per line)" maxlength="5000" class="rss-feed-text-area w-input"></textarea></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+          <div class="add-button-wrapper"><a href="#" class="w-inline-block"><img src="images/add-button-gray.svg" class="add-button-gray"></a></div>
+        </div>
+      </div>
+      <div class="resize"><img src="images/resize.svg" height="15" class="resize-image"></div>
+    </div>
+  </div>
+  <div class="container w-container">
+    <h3 class="h3">Weather</h3>
+    <div class="weather">
+      <div class="card-header">
+        <div class="card-name">Weather</div><a href="#" class="edit-button">Edit</a></div>
+      <div class="card-body-edit-small">
+        <div class="buttons-wrapper"><a href="#" class="ok-button w-button">OK</a><a href="#" class="delete-button w-button">Delete</a></div>
+        <div class="edit-elements-wrapper">
+          <div class="edit-state-steps">ZIP</div>
+          <div class="w-form">
+            <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="rss-feed-text-area w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="00000" id="field-2" required=""></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resize"><img src="images/resize.svg" height="15" class="resize-image"></div>
+    </div>
+  </div>
+  <div class="container w-container">
+    <h3 class="h3">Calendar</h3>
+    <div class="email">
+      <div class="card-header">
+        <div class="card-name">Email</div><a href="#" class="edit-button">Edit</a></div>
+      <div class="card-body-edit-small">
+        <div class="buttons-wrapper"><a href="#" class="ok-button w-button">OK</a><a href="#" class="delete-button w-button">Delete</a></div>
+        <div class="edit-elements-wrapper">
+          <div data-delay="0" class="list-dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="dropdown-text">Select Type</div><img src="images/dropdown-icon.svg" height="10" class="dropdown-icon"></div>
+            <nav class="dropdown-list w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">None (Timeline)</a><a href="#" class="w-dropdown-link">Open Source</a><a href="#" class="w-dropdown-link">News</a></nav>
+          </div>
+          <div class="w-form">
+            <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="rss-feed-text-area w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="ICS URL" id="field-2" required=""></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resize"><img src="images/resize.svg" height="15" class="resize-image"></div>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
